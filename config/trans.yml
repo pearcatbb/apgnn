@@ -1,0 +1,30 @@
+# Data
+data_name: 'trans'
+data_dir: './data/'
+train_ratio: 0.2
+save_dir: './pytorch_models/'
+
+# Model
+model: 'APGNN'
+# Model architecture
+emb_size: 128
+
+seed: 1024
+
+# hyper-parameters
+lr: 0.01
+weight_decay: 0.0001
+batch_size: 32
+num_epochs: 0
+valid_epochs: 5
+temperature: 1000
+pre_train_epoch: 5
+
+lamda1: 0.01
+lamda2: 0.001
+
+gama: 0
+
+# Device
+no_cuda: False
+cuda_id: '0'

@@ -1,0 +1,30 @@
+# Data
+data_name: 'elliptic'
+data_dir: './data/'
+train_ratio: 0.2
+save_dir: './pytorch_models/'
+
+# Model
+model: 'APGNN'
+# Model architecture
+emb_size: 128
+
+seed: 72
+
+# hyper-parameters
+lr: 0.005
+weight_decay: 0.0001
+batch_size: 32
+num_epochs: 1001
+valid_epochs: 5
+temperature: 1000
+pre_train_epoch: 5
+
+lamda1: 0.1
+lamda2: 0.01
+
+gama: 1
+
+# Device
+no_cuda: False
+cuda_id: '0'
